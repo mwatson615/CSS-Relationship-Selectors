@@ -1,0 +1,29 @@
+/* The header element should have a 1px border. Color, you pick. */
+
+header {
+	border: 1px solid green;
+}
+
+/* Convert the ul in the navigation element into a series of horizontal links with # as the href value, without bullets, and have some space between them horizontally. */
+
+header ul li {
+	display: inline;
+	list-style: none;
+	justify-content: space-between;
+}
+
+/* Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag. If inside an anchor, it should be colored purple. */
+span.disabled {
+	color: grey;
+}
+
+a.disabled {
+	color: purple;
+}
+
+/* Any text inside an element with a class of "active" should be colored yellow. */
+
+.active {
+	color: yellow;
+}
+
