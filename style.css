@@ -43,6 +43,28 @@ a.disabled {
  	background-color: red;
  }
 
+/* The sibling h4 of the blue element should have background color of blue
+ */
+.parent div h4:last-of-type {
+	background-color: blue;
+}
 
+/* Any h4 that is a direct child of grandparent should have a 1px border with rounded corners. */
+.grandparent h4 {
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 50%;
+}
 
+/* Elements with a class of promo should have bold text that is also colored gold. Only 2 of these exist, and the first one (May) isn't turning gold because the div has the promo class, but (May) is actually a span within the promo div. That span already has a grey color as it has a disabled class and was used in step 4 which is more specific than this step.
+ */
+.promo {
+	font-weight: bold;
+	color: gold;
+}
+
+/* Without adding any other attributes to the input fields in the footer, write a CSS selector that makes any text input field have a height of 25px. */
+span input {
+	height: 25px;
+}
 
