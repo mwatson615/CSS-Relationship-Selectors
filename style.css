@@ -27,3 +27,22 @@ a.disabled {
 	color: yellow;
 }
 
+/* Make the "I'm red" text colored red */
+.parent div:first-child {
+	color: red;
+}
+
+/* Make the "I'm blue" text colored blue */
+.parent div:nth-child(3n) {
+	color: blue;
+}
+
+/* The sibling h4 of the red element should have a background color of red
+ */
+ .parent div h4:first-of-type {
+ 	background-color: red;
+ }
+
+
+
+
